@@ -1,0 +1,76 @@
+.card{
+  background-color: #fff;
+  padding: 10px;
+}
+
+.card__title{
+  color: #282828;
+  size: 14px;
+}
+
+.card__description{
+  color: #282828;
+  size: 12px;
+}
+
+.card__img-top{
+  width: 288px;
+  height: 182px;
+  margin-bottom: 20px;
+}
+
+header {
+  background-color: #ffffff;
+}
+
+body {
+  background-color: #C4C4C4;
+}
+
+footer {
+  background-color: #ffffff;
+}
+
+.card_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header__title {
+    font-size: 9px;
+  }
+  .footer__title{
+    font-size: 9px;
+  }
+  .card__title{
+    font-size: 9px;
+  }
+  .card__description{
+    font-size: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /*iPhoneSEの場合*/
+  @media screen and (max-width:320px) {
+    .header__title{
+      font-size: 7px;
+    }
+    .footer__title{
+      font-size: 7px;
+    }
+    .card__title{
+      font-size: 7px;
+    }
+    .card__description{
+      display: none;
+    }
+    
+  }
+}
